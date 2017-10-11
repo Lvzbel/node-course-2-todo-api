@@ -24,12 +24,12 @@ var UserId = '59d2d38ea1d9da7e1d676a8f'
 //     console.log('Todo', todo);
 // });
 
-// Todo.findById(id).then((todo) => {
-//   if (!todo){
-//     return console.log('Id not found');
-//   }
-//     console.log('Todo By Id', todo);
-// }).catch((e) => console.log(e));
+Todo.findById(id).then((todo) => {
+  if (!todo){
+    return console.log('Id not found');
+  }
+    console.log('Todo By Id', todo);
+}).catch((e) => console.log(e));
 
 User.findById(UserId).then((user) => {
   if (!user){
